@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Helvetica Neue Thin';
+    src: url('../fonts/HELVETICANEUE-THIN.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Helvetica Neue Thin' ;
+    background: linear-gradient(to right,#4457fd,#63d3e3);
+    /* color:#ffffff; */
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+}
+
+.navItems{
+    display: flex;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+    margin-right: 7rem;
+}
+
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+  
+/* .navItems li{ */
+
