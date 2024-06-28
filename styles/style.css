@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Helvetica Neue Thin';
-    src: url('../fonts/HELVETICANEUE-THIN.OTF') format('opentype');
+    src: url('../fonts/HELVETICANEUE-THIN.OTF');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,7 +8,9 @@
 body{
     font-family: 'Helvetica Neue Thin' ;
     background: linear-gradient(to right,#4457fd,#63d3e3);
-    /* color:#ffffff; */
+    color:#ffffff;
+    padding: 0%;
+    margin: 0%;
 }
 
 .navBar{
@@ -16,36 +18,78 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-left: 4rem;
+    padding: 18px 0;
+}
+
+.navBar a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo img{
+  width: 70%;
+}
+
+.hamburger{
+  display: none; 
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 16px;
+}
+
+.line{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #ffffff;
 }
 
 .navItems{
     display: flex;
     gap: 1rem 2rem;
     flex-wrap: wrap;
-    margin-right: 7rem;
+    list-style: none;
+    padding-left: 0%;
+    margin-right: 4rem;
 }
 
-
-a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
+@media screen and (max-width: 768px) {
+  .navBar{
+    display: block;
+    margin-left: 1rem;
   }
-  a:visited {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
+  .hamburger{
+    display: block;
   }
-  a:hover {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
+  /*These classes activate by js*/
+  .hamburger.active .line:nth-child(2){
+    opacity: 0;
   }
-  a:active {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-  } 
+  .hamburger.active .line:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .line:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
   
-/* .navItems li{ */
+  .logo img{
+    width: 10rem;
+  }
+  .navItems{
+    display: none;
+  }
+
+  .navItems.active{
+    display: block;
+    margin: 15px auto;
+  }
+
+  .navItems.active li{
+      padding: 7px 0;
+  }
+   
+}
+
 
