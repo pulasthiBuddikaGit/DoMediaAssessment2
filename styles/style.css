@@ -13,12 +13,22 @@ body{
     margin: 0%;
 }
 
+/*Navbar styles*/
 .navBar{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-left: 4rem;
     padding: 18px 0;
+}
+
+.navItems{
+  display: flex;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0%;
+  margin-right: 4rem;
 }
 
 .navBar a{
@@ -46,14 +56,7 @@ body{
   background-color: #ffffff;
 }
 
-.navItems{
-    display: flex;
-    gap: 1rem 2rem;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-left: 0%;
-    margin-right: 4rem;
-}
+
 
 @media screen and (max-width: 768px) {
   .navBar{
@@ -90,6 +93,24 @@ body{
       padding: 7px 0;
   }
    
+}
+
+/*main styles*/
+.containter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.first_para{
+  font-size: 3em;
+  margin: 15px 0;
+}
+
+.sec_para{
+  font-size: 17px;
+  margin: 15px 0;
 }
 
 
