@@ -28,7 +28,8 @@ body{
   flex-wrap: wrap;
   list-style: none;
   padding-left: 0%;
-  margin-right: 4rem;
+  margin-right: 124px;
+  font-size: 20px;
 }
 
 .navBar a{
@@ -100,7 +101,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  flex-wrap: wrap;
+  margin: 50px 24px;
 }
 
 .first_para{
@@ -113,4 +115,34 @@ body{
   margin: 15px 0;
 }
 
+.button_container{
+  width: 165px;
+  height: 50px;
+  margin-top: 25px;
+}
+
+.get_startedBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  min-width: 165px;
+  min-height: 50px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 50px;
+  background: transparent;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-family: inherit;
+}
+
+.button_container a{ 
+  text-decoration: none;
+}
+
+.arrow-icon {
+  margin-left: 10px;
+}
 
