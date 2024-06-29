@@ -55,6 +55,7 @@ body{
   height: 3px;
   margin: 5px auto;
   background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -108,6 +109,7 @@ body{
 .first_para{
   font-size: 3em;
   margin: 15px 0;
+  
 }
 
 .sec_para{
@@ -146,3 +148,51 @@ body{
   margin-left: 10px;
 }
 
+@media screen and (max-width:1284px) {
+
+  .para_containter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ 
+  .img_container{
+    order: 1;
+  }
+  .para_containter{
+    order: 2;
+  }
+} 
+
+@media screen and (min-width:501px) and (max-width: 768px) {
+
+  .para_containter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+  
+  .image{
+    width: 475px;
+  }
+  .first_para{
+    width: 500px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .para_containter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+  
+  .image{
+    width: 375px;
+  }
+  .first_para{
+    font-size: 35px;
+  }
+}
