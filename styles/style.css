@@ -22,6 +22,7 @@ body{
     padding: 18px 0;
 }
 
+
 .navItems{
   display: flex;
   gap: 1rem 2rem;
@@ -85,7 +86,6 @@ body{
   .navItems{
     display: none;
   }
-
   .navItems.active{
     display: block;
     margin: 15px auto;
@@ -103,7 +103,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 50px 24px;
+  margin: 50px 12px;
 }
 
 .first_para{
@@ -147,7 +147,7 @@ body{
   margin-left: 10px;
 }
 
-@media screen and (max-width:1284px) {
+@media screen and (max-width:1260px) {
 
   .para_containter {
     display: flex;
