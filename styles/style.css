@@ -18,7 +18,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 4rem;
+    margin: 0 100px;
     padding: 18px 0;
 }
 
@@ -29,8 +29,7 @@ body{
   flex-wrap: wrap;
   list-style: none;
   padding-left: 0%;
-  margin-right: 124px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .navBar a{
@@ -102,25 +101,33 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 50px 12px;
+}
+
+.para_containter{
+  margin-left: 102px;
+  width: 635px;
+  height: 239px;
+  margin-bottom: 265px;
+  margin-top: 164px;
 }
 
 .first_para{
-  font-size: 3em;
+  font-size: 44px;
   margin: 15px 0;
   
 }
 
 .sec_para{
-  font-size: 17px;
+  font-size: 18px;
   margin: 15px 0;
 }
 
 .button_container{
-  width: 165px;
-  height: 50px;
+  width: 163px;
+  height: 43px;
   margin-top: 25px;
+  margin-left: -2px;
+  
 }
 
 .get_startedBtn{
@@ -134,7 +141,7 @@ body{
   color: #ffffff;
   border-radius: 50px;
   background: transparent;
-  font-size: 17px;
+  font-size: 16px;
   cursor: pointer;
   font-family: inherit;
 }
@@ -147,32 +154,46 @@ body{
   margin-left: 10px;
 }
 
-@media screen and (max-width:1260px) {
+.image{
+  width: 542px;
+  height: 323px;
+  margin-top: 113px;
+  margin-right: 100px;
+  margin-bottom: 232px;
+}
 
-  .para_containter {
+@media screen and (max-width:1280px) {
+
+  .containter {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
  }
- 
-  .img_container{
+
+  .image{
     order: 1;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .para_containter{
     order: 2;
+    margin-top: 10px;
   }
 } 
 
-@media screen and (min-width:501px) and (max-width: 768px) {
+@media screen and (min-width:768px) and (max-width: 972px) {
 
   .para_containter {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
  }
   
   .image{
     width: 475px;
+    height: 300px;
+    margin-top: 35px;
   }
   .first_para{
     width: 500px;
@@ -180,18 +201,40 @@ body{
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
   .para_containter {
-    display: flex;
+    width: auto;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
+    display: flex;
  }
   
   .image{
-    width: 375px;
+    width: 400px;
+    height: 250px;
+    margin-top: 35px;
   }
   .first_para{
     font-size: 35px;
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  .image{
+    width: 300px;
+    height: 200px;
+    margin-top: 35px;
   }
+  .para_containter{
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .first_para{
+    font-size: 30px;
+  } 
 }
