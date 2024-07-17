@@ -3,7 +3,8 @@ const hamburger = document.querySelector(".hamburger")
 
 hamburger.addEventListener("click", ()=>{
     /*adds the active class if hambuger element is not present, and removes it if it is present.(here active class means cross,we created using 
-    hamburger class)*/
+    hamburger class).
+    toggle acts as both add and remove functions*/
     hamburger.classList.toggle("active");
     navItems.classList.toggle("active");
 })
